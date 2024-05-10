@@ -18,7 +18,7 @@ def publish_messages(thread_id):
         client.disconnect()
 
 if __name__ == '__main__':
-    num_threads = 500
+    num_threads = 100
 
     threads = []
     for i in range(num_threads):
