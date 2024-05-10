@@ -1,0 +1,10 @@
+cd C:\Program Files\mosquitto			(Change dir)
+net start mosquitto						(Opens mosquitto, close inside "Services")
+nestat -a								(See connected devices)
+
+
+
+net stop mosquitto
+net start mosquitto
+mosquitto_sub -h localhost -t "environment/+"
+mosquitto_sub -h localhost -t "environment/wind_speed"
